@@ -1,0 +1,56 @@
+*, *:focus {
+    outline: none;
+}
+:root {
+    --main: #2d1349;
+    --sec: #7b6da7;
+    --txt: #f7bce6;
+    --bg-op: rgba(105, 105, 105, 0.3);
+}
+body {
+    background-color: var(--main);
+    color: var(--txt);
+}
+
+.container {
+    background-color: var(--bg-op);
+    border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -ms-border-radius: 0.625em;
+    -o-border-radius: 0.625em;
+}
+i {
+    font-size: 20px;
+    cursor: pointer;
+}
+.none {display: none;}
+.block {display: block;}
+
+.card {
+    background-color: var(--sec);
+    color: var(--txt);
+    font-weight: bold;
+    border-radius: 0.125em;
+    -webkit-border-radius: 0.125em;
+    -moz-border-radius: 0.125em;
+    -ms-border-radius: 0.125em;
+    -o-border-radius: 0.125em;
+}
+.btn-info {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #b982b4; /* #b982b4*/
+    --bs-btn-border-color: #b982b4;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9c5195;
+    --bs-btn-hover-border-color: #a23597;
+    --bs-btn-focus-shadow-rgb: 11,172,204;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b982b4;
+    --bs-btn-active-border-color: #a23597;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #b982b4;
+    --bs-btn-disabled-border-color: #b982b4;
+    margin-top: 1em;
+}

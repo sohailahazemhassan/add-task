@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container py-4 mt-3">
+        <div class="row">
+
+            <!-- start form -->
+            <div class="col-12 col-md-6">
+
+                <div class="card">
+                    <div id="validationMessage" class="none alert alert-danger">
+                        
+                        <button id="closeValidationMessageBtn" type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="taskTitle"> Task Title</label>
+                            <input id="taskTitle" type="text" class="form-control" placeholder="Type Your Task Title Here">
+                        </div>
+                        <div class="form-group">
+                            <label for="taskDate"> Task Date</label>
+                            <input id="taskDate" type="date" class="form-control">
+                        </div>
+                        <button id="addTaskBtn" class="btn btn-info"> Add Task </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- start tasks -->
+            <div class="col-12 col-md-6">
+                <h1 class="text-center"> List Tasks </h1>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div id="allTasks" class="allTasks">
+                            
+                        </div>
+                        <div id="noTask" class="alert alert-danger">
+                            <h3 class="text-center"> No Tasks Added yet </h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
